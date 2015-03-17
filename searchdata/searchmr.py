@@ -1,6 +1,12 @@
 # -*- coding: utf-8 -*-
 
-# Usage: use this as a map/reduce to gather 
+# Usage: use this as a map/reduce to gather data.
+# mkdir -p /mnt/telemetry/work/cache
+# cd ~/telemetry-server
+# python -m mapreduce.job ./searchdata/searchmr.py    --input-filter ./searchdata/telemetry.json    --num-mappers 16    --num-reducers 16    --data-dir /mnt/telemetry/work/cache    --work-dir /mnt/telemetry/work    --output ./output.out    --bucket "telemetry-published-v2"
+
+# Copy results to Excel, pivot table
+# Copy from pivot table to a new tab and post-process from there.
 
 
 import json
